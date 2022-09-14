@@ -1,0 +1,31 @@
+.login {
+  text-align: center;
+  width: 50rem;
+  margin: 7rem auto;
+  padding: 2rem;
+}
+.login label {
+  font-weight: 300;
+  font-size: 30px;
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0.5rem;
+}
+
+.login input {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  width: 25rem;
+  height: 4rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 24px;
+  border: 1px solid black;
+}
+
+.error {
+  background-color: rgb(238, 162, 162);
+}

@@ -1,0 +1,48 @@
+.Header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  background-color: #120f12;
+  color: #fff;
+  padding: 0 7%;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+p {
+  background-color: #ff571e;
+  display: flex;
+  position: absolute;
+  width: 3rem;
+  height: 5rem;
+  align-items: center;
+  margin-left: -4rem;
+}
+
+.Header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.Header li {
+  margin: 0 1rem;
+}
+
+.Header button {
+  border: none;
+  padding: 0.5rem 1.5rem;
+}
+
+.Header a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.Header a:hover {
+  color: #b4b4b4;
+}
