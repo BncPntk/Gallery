@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 
 import Header from './components/Header';
 import Auth from './components/Auth';
+import Gallery from './components/Gallery/Gallery';
 import UploadImages from './components/UploadImage';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <Fragment>
       <Header />
       {!isAuth && <Auth />}
-      {isAuth && <UploadImages />}
+      {isAuth && <Gallery />}
     </Fragment>
   );
 }
