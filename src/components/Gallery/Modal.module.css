@@ -1,0 +1,32 @@
+.arrow-left {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.arrow-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.title {
+  color: #fff;
+  top: 2%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}

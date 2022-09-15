@@ -1,0 +1,26 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+.container input {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin: auto;
+  min-width: 12rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 16px;
+}
+.container label {
+  padding-top: 1rem;
+  display: block;
+  text-align: center;
+  line-height: 150%;
+}
+.container button {
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  text-align: center;
+}

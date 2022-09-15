@@ -12,6 +12,10 @@ const Header = () => {
     dispatch(authActions.logout());
   };
 
+  const toggleUploadHandler = () => {
+    dispatch(authActions.toggleUpload());
+  };
+
   return (
     <header className={classes.Header}>
       <p />
@@ -23,7 +27,7 @@ const Header = () => {
               <a href='/'>Home</a>
             </li>
             <li>
-              <a href='/'>Upload</a>
+              <a href='/' onClick={toggleUploadHandler}>Upload</a>
             </li>
             <li>
               <button onClick={logoutHandler}>Logout</button>

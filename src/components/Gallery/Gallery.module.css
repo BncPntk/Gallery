@@ -104,15 +104,7 @@
   }
 }
 @media (max-width: 640px) {
-  /* .mySlides {
-    max-width: 620px;
-    column-count: 3; */
-  /* column-gap: 1rem; */
-  /* margin: 0 auto;
-    margin-top: 65vh;
-  } */
   .mySlides {
-    /* max-width: 300px; */
     column-count: 3;
     gap: 0.1rem;
   }
