@@ -1,6 +1,6 @@
 import { createSlice, configureStore } from '@reduxjs/toolkit';
 
-const initialState = { isLoggedIn: false, showUpload: false }
+const initialState = { isLoggedIn: false, showUpload: false, showRedreshBtn: false }
 
 const authSlice = createSlice({
     name: 'auth',
@@ -15,6 +15,9 @@ const authSlice = createSlice({
         },
         toggleUpload(state) {
             state.showUpload = !state.showUpload;
+        },
+        toggleRefresh(state) {
+            state.showRedreshBtn = !state.showRedreshBtn;
         }
     }
 });

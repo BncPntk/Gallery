@@ -1,4 +1,5 @@
-import { useState, useSelector, useDispatch } from 'react';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import Modal from './Modal';
 
@@ -7,11 +8,11 @@ import classes from './Gallery.module.css';
 import UploadImage from './UploadImage';
 
 const Gallery = (props) => {
-  // const dispatch = useDispatch();
   const [clickedImage, setClickedImage] = useState(null);
   const [imgAlt, setImgAlt] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
-  // const isToggled = useSelector((state) => state.auth.showUpload);
+
+  const toggle = useSelector((state) => state.auth.showUpload);
 
   const data = dummyData;
   let images = JSON.parse(localStorage.getItem('image') || '[]');
@@ -99,7 +100,7 @@ const Gallery = (props) => {
   // console.log(clickedImage);
   return (
     <div>
-      {<UploadImage />}
+      {toggle && <UploadImage />}
       <div className={classes.container}>
         {renderImg}
         {renderDefaultImg}

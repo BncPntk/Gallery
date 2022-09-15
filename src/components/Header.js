@@ -27,7 +27,7 @@ const Header = () => {
               <a href='/'>Home</a>
             </li>
             <li>
-              <a href='/' onClick={toggleUploadHandler}>Upload</a>
+              <a onClick={toggleUploadHandler}>Upload</a>
             </li>
             <li>
               <button onClick={logoutHandler}>Logout</button>
