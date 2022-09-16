@@ -25,6 +25,13 @@
   text-align: center;
 }
 
+.select {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
+}
+
 .refresh {
   display: block;
   margin: auto;

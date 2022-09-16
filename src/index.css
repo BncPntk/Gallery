@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(-60deg, #a0a0a0, #efefef, #a3a0a0, #c0bfbf);
-  background-size: 500% 500%;
+  background-size: 1200% 1200%;
   animation: gradient 12s ease infinite;
   height: 100vh;
 }

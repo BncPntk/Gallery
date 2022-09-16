@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 
+import SelectCategory from './SelectCategory';
 import Modal from './Modal';
+import UploadImage from './UploadImage';
 
 import dummyData from './dummyData.json';
 import classes from './Gallery.module.css';
-import UploadImage from './UploadImage';
 
 const Gallery = (props) => {
   const [clickedImage, setClickedImage] = useState(null);
@@ -97,13 +98,23 @@ const Gallery = (props) => {
       </div>
     );
   });
-  // console.log(clickedImage);
+
+  const findTags = images.map((img, i) => {
+    let [...imgCategories] = img.categories;
+    if (imgCategories.some((e) => e.value === 'nature')) {
+      // console.log(img);
+    }
+    // console.log(imgCategories);
+  });
+
   return (
     <div>
+      <SelectCategory />
       {toggle && <UploadImage />}
       <div className={classes.container}>
         {renderImg}
         {renderDefaultImg}
+        {findTags}
       </div>
       {clickedImage && (
         <Modal

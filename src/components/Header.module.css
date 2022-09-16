@@ -12,7 +12,6 @@
   font-size: 25px;
   font-weight: 700;
 }
-
 p {
   background-color: #ff571e;
   display: flex;
@@ -46,4 +45,20 @@ p {
 .Header a:hover {
   color: #b4b4b4;
   cursor: pointer;
+}
+
+@media (max-width: 980px) {
+  .Header h1 {
+    font-size: 30px;
+  }
+  .Header a {
+    font-size: 22px;
+  }
+  .Header button {
+    font-size: 18px;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 640px) {
 }
